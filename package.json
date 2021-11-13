@@ -1,0 +1,26 @@
+{
+  "name": "scaape_wavelength_be",
+  "version": "1.0.0",
+  "description": "Scaape Wavelength BackEnd",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Scaape/Scaape_wavelength_BE.git"
+  },
+  "author": "Anish Dutta",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Scaape/Scaape_wavelength_BE/issues"
+  },
+  "homepage": "https://github.com/Scaape/Scaape_wavelength_BE#readme",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "peer": "^0.6.1",
+    "socket.io": "^4.3.2",
+    "uuid": "^8.3.2"
+  }
+}

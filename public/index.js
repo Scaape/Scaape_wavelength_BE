@@ -8,7 +8,7 @@ myvideo.muted = true;
 const peerConnections = {}
 navigator.mediaDevices.getUserMedia({
   video:true,
-  audio:true
+  audio:false
 }).then((stream)=>{
   myVideoStream = stream;
   addVideo(myvideo , stream);
@@ -16,7 +16,7 @@ navigator.mediaDevices.getUserMedia({
     call.answer(stream);
       const vid = document.createElement('video');
     call.on('stream' , userStream=>{
-      // addVideo(vid , userStream);
+      addVideo(vid , userStream);
     })
     call.on('error' , (err)=>{
       alert(err)
@@ -45,7 +45,7 @@ socket.on('userJoined' , id=>{
     alert(err);
   })
   call.on('stream' , userStream=>{
-    // addVideo(vid , userStream);
+    addVideo(vid , userStream);
   })
   call.on('close' , ()=>{
     vid.remove();

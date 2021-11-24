@@ -1,26 +1,20 @@
 {
-  "name": "scaape_wavelength_be",
+  "name": "videocall",
   "version": "1.0.0",
-  "description": "Scaape Wavelength BackEnd",
-  "main": "index.js",
+  "description": "",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"nodemon server.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Scaape/Scaape_wavelength_BE.git"
-  },
-  "author": "Anish Dutta",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/Scaape/Scaape_wavelength_BE/issues"
-  },
-  "homepage": "https://github.com/Scaape/Scaape_wavelength_BE#readme",
+  "author": "Abhishek kalra",
+  "license": "ISC",
   "dependencies": {
-    "ejs": "^3.1.6",
+    "ejs": "^3.1.5",
     "express": "^4.17.1",
+    "nodemon": "^2.0.15",
     "peer": "^0.6.1",
-    "socket.io": "^4.3.2",
+    "socket.io": "^3.0.4",
     "uuid": "^8.3.2"
   }
 }
